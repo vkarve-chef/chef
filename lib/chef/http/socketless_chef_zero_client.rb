@@ -181,7 +181,7 @@ class Chef
       end
 
       def to_net_http(code, headers, chunked_body)
-        body = chunked_body.join("")
+        body = chunked_body.join
         msg = STATUS_MESSAGE[code]
         raise "Cannot determine HTTP status message for code #{code}" unless msg
 

@@ -86,7 +86,7 @@ class Chef
             indicator = (i + 1) == culprit_line ? ">> " : ":  "
             context_lines << "#{line_nr}#{indicator}#{file_lines[i]}"
           end
-          context_lines.join("")
+          context_lines.join
         end
 
         def display_lower_bound

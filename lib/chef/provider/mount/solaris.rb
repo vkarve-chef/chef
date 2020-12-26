@@ -214,7 +214,7 @@ class Chef
 
         def vfstab_write(contents)
           etc_tempfile do |f|
-            f.write(contents.join(""))
+            f.write(contents.join)
             f.close
             # move, preserving modes of destination file
             mover = Chef::FileContentManagement::Deploy.strategy(true)
