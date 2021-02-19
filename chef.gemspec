@@ -56,6 +56,9 @@ Gem::Specification.new do |s|
   s.add_dependency "chef-zero", ">= 14.0.11"
   s.add_dependency "chef-vault"
 
+  s.add_dependency "aws-sdk-ssm"
+  s.add_dependency "aws-sdk-secretsmanager"
+
   s.add_dependency "plist", "~> 3.2"
   s.add_dependency "iniparse", "~> 1.4"
   s.add_dependency "addressable"
