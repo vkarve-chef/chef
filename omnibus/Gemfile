@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem "omnibus", git: "https://github.com/chef/omnibus", branch: "master"
-gem "omnibus-software", git: "https://github.com/chef/omnibus-software", branch: "master"
+gem "omnibus-software", git: "https://github.com/chef/omnibus-software", branch: "update-cacerts-from-2020-12-08-to-2021-01-19"
 gem "artifactory"
 
 gem "pedump"
