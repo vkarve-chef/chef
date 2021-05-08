@@ -120,4 +120,5 @@ jobs:
         run:  |
           cd kitchen-tests
           sudo bundle install
+          sudo bundle exec chef-cli install
           sudo bundle exec kitchen test end-to-end-${{ matrix.os }}
