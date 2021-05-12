@@ -42,24 +42,24 @@ class Chef
       DOC
 
       property :source_name, String, name_property: true,
-               description: "An optional property to set the source name if it differs from the resource block's name."
+        description: "An optional property to set the source name if it differs from the resource block's name."
 
       property :source, String,
         description: "The source URL."
 
       property :bypass_proxy, [TrueClass, FalseClass], default: false,
-               description: "Whether or not to bypass the system's proxy settings to access the source."
+        description: "Whether or not to bypass the system's proxy settings to access the source."
 
       property :admin_only, [TrueClass, FalseClass], default: false,
-               description: "Whether or not to set the source to be accessible to only admins.",
-               introduced: "15.1"
+        description: "Whether or not to set the source to be accessible to only admins.",
+        introduced: "15.1"
 
       property :allow_self_service, [TrueClass, FalseClass], default: false,
-               description: "Whether or not to set the source to be used for self service.",
-               introduced: "15.1"
+        description: "Whether or not to set the source to be used for self service.",
+        introduced: "15.1"
 
       property :priority, Integer, default: 0,
-               description: "The priority level of the source."
+        description: "The priority level of the source."
 
       property :disabled, [TrueClass, FalseClass], default: false, desired_state: false, skip_docs: true
 

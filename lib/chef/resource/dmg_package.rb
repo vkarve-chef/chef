@@ -27,7 +27,7 @@ class Chef
       description "Use the **dmg_package** resource to install a package from a .dmg file. The resource will retrieve the dmg file from a remote URL, mount it using macOS' `hdidutil`, copy the application (.app directory) to the specified destination (`/Applications`), and detach the image using `hdiutil`. The dmg file will be stored in the `Chef::Config[:file_cache_path]`."
       introduced "14.0"
       examples <<~DOC
-        **Install Google Chrome via the DMG package**:
+        **Install Google Chrome via the DMG package**
 
         ```ruby
         dmg_package 'Google Chrome' do
@@ -38,7 +38,7 @@ class Chef
         end
         ```
 
-        **Install VirtualBox from the .mpkg**:
+        **Install VirtualBox from the .mpkg**
 
         ```ruby
         dmg_package 'Virtualbox' do
@@ -47,7 +47,7 @@ class Chef
         end
         ```
 
-        **Install pgAdmin and automatically accept the EULA**:
+        **Install pgAdmin and automatically accept the EULA**
 
         ```ruby
         dmg_package 'pgAdmin3' do

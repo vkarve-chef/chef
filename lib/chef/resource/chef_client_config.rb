@@ -23,7 +23,7 @@ class Chef
       unified_mode true
 
       provides :chef_client_config
-
+      
       description "Use the **chef_client_config** resource to create a client.rb file in the #{ChefUtils::Dist::Infra::PRODUCT} configuration directory. See the [client.rb docs](https://docs.chef.io/config_rb_client/) for more details on options available in the client.rb configuration file."
       introduced "16.6"
       examples <<~DOC
@@ -139,7 +139,7 @@ class Chef
         DESC
 
       property :formatters, Array,
-        description: "",
+        description: "Client logging formatters to load",
         default: []
 
       property :event_loggers, Array,

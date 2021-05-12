@@ -27,7 +27,7 @@ class Chef
       description "Use the **chef_sleep** resource to pause (sleep) for a number of seconds during a #{ChefUtils::Dist::Infra::PRODUCT} run. Only use this resource when a command or service exits successfully but is not ready for the next step in a recipe."
       introduced "15.5"
       examples <<~DOC
-        **Sleep for 10 seconds**:
+        **Sleep for 10 seconds**
 
         ```ruby
         chef_sleep '10'
@@ -41,7 +41,7 @@ class Chef
         end
         ```
 
-        **Use a notification from another resource to sleep only when necessary**:
+        **Use a notification from another resource to sleep only when necessary**
 
         ```ruby
         service 'Service that is slow to start and reports as started' do
